@@ -1,0 +1,10 @@
+def hitung_kemunculan_kata(kalimat, kata):
+    kalimat = kalimat.lower().replace('.', '').replace(',', '').replace('!', '').replace('?', '')
+    kata_kalimat = kalimat.split()
+    kemunculan = kata_kalimat.count(kata.lower())
+    return kemunculan
+
+kalimat = "Saya mau makan. Makan itu wajib. Mau siang atau malam saya wajib makan"
+kata_yang_dicari = "makan"
+frekuensi = hitung_kemunculan_kata(kalimat, kata_yang_dicari)
+print(f"{kata_yang_dicari} ada {frekuensi} buah")
