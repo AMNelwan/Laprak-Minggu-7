@@ -1,0 +1,11 @@
+def hapus_spasi_berlebih(kalimat):
+    kata_kalimat = kalimat.split()
+    
+    kalimat_baru = ' '.join(kata_kalimat)
+    
+    return kalimat_baru
+
+kalimat = input("Masukkan kalimat: ")
+
+kalimat_tanpa_spasi_berlebih = hapus_spasi_berlebih(kalimat)
+print("Hasil setelah menghapus spasi berlebih:", kalimat_tanpa_spasi_berlebih)
